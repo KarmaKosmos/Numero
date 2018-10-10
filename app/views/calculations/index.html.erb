@@ -1,0 +1,26 @@
+<h1>The List of Calculations</h1>
+
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Date Of Birth:</th>
+        <thcolspan="2"></th>
+    </tr>
+
+    <% @calculations.each do |calculation| %>
+        <tr>
+            <td><%= calculation.first_name %> <%= calculation.middle_name %> <%= calculation.last_name %></td>
+            <td><%= calculation.date_of_birth %></td>
+            <td><%= link_to 'Show', calculation_path(calculation) %></td>
+            <td><%= link_to 'Edit', edit_calculation_path(calculation) %></td>
+            <td><%= link_to 'Destroy', calculation_path(calculation),
+                    method: :delete,
+                    data: { confirm: 'Are you sure?' }%></td>
+        </tr>
+    <% end %>
+</table>    
+
+<p>
+    <%= link_to 'New calculation', new_calculation_path %>
+</p>
+        

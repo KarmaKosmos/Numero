@@ -1,0 +1,89 @@
+<p>
+    <strong>Имя:</strong>
+    <%= @calculation.first_name %>
+</p>
+
+<p>
+    <strong>Отчество:</strong>
+    <%= @calculation.middle_name %>
+</p>
+
+<p>
+    <strong>Фамилия:</strong>
+    <%= @calculation.last_name %>
+</p>
+
+<p>
+    <strong>Дата рождения:</strong>
+    <%= @calculation.date_of_birth %>
+</p>
+
+<p>
+    <strong>Число рождения:</strong>
+    <%= @calculation.birth_number %>
+</p>
+
+<p>
+    <strong>Число судьбы:</strong>
+    <%= @calculation.destiny_number %>
+</p>
+
+<p>
+    <strong>Число сердца:</strong>
+    <%= @calculation.heart_number %>
+</p>
+
+<p>
+    <strong>Число образа:</strong>
+    <%= @calculation.figure_number %>
+</p>
+
+<p>
+    <strong>Число реальности:</strong>
+    <%= @calculation.reality_number %>
+</p>
+
+<p>
+    <strong>Физический план:</strong>
+    <%= @calculation.physical_aspect %>
+</p>
+
+<p>
+    <strong>Суммарное значение для физического плана:</strong>
+    <%= @calculation.physical_aspect_total %>
+</p>
+
+<p>
+    <strong>Ментальный план:</strong>
+    <%= @calculation.mental_aspect %>
+</p>
+
+<p>
+    <strong>Суммарное значение для ментального плана:</strong>
+    <%= @calculation.mental_aspect_total %>
+</p>
+
+<p>
+    <strong>Эмоциональный план:</strong>
+    <%= @calculation.emotional_aspect %>
+</p>
+
+<p>
+    <strong>Суммарное значение для эмоционального плана:</strong>
+    <%= @calculation.emotional_aspect_total %>
+</p>
+
+<p>
+    <strong>Интуитивный план:</strong>
+    <%= @calculation.intuitive_aspect %>
+</p>
+
+<p>
+    <strong>Суммарное значение для интуитивного плана:</strong>
+    <%= @calculation.intuitive_aspect_total %>
+</p>
+
+
+<%= link_to 'Edit', edit_calculation_path(@calculation) %>
+<%= link_to 'Back', calculations_path %>
+    
